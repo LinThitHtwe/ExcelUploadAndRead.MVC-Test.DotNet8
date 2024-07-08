@@ -1,0 +1,14 @@
+﻿@{
+}
+
+<form method="post" enctype="multipart/form-data">
+    <div class="row">
+        <label>Select Excel</label>
+        <input type="file" name="requestFile" accept=".xlsx,.xls,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet,application/vnd.ms-excel" />
+    </div>
+    <div class="row">
+        <div class="col-3">
+            <input type="submit" asp-controller="ExcelSheet" asp-action="UploadExcelSheet" class="btn btn-primary" value="Submit Excel File" />
+        </div>
+    </div>
+</form>
